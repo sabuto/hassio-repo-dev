@@ -2,7 +2,7 @@
   "name": "Telegraf",
   "version": "dev",
   "slug": "hassio_telegraf",
-  "description" : "An addon to add telegraf to hassio, testing the dev build script.",
+  "description" : "An addon to add telegraf to hassio. dev test",
   "url" : "https://github.com/Sabuto/hassio-telegraf",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
@@ -13,7 +13,6 @@
   "docker_api": true,
   "host_network": true,
   "host_pid": true,
-  "host_dbus": true,
   "apparmor": false,
   "full_access" : true,
   "options": {
@@ -28,10 +27,13 @@
     },
     "swap" : {
       "enabled" : true
-    }, 
+    },
     "docker" : {
       "enabled" : false,
       "timeout" : "5s"
+    },
+    "thermal" : {
+      "enabled" : false
     },
     "smart_monitor" : {
       "enabled" : false,
@@ -74,6 +76,9 @@
       "enabled" : "bool",
       "timeout" : "str"
     },
+    "thermal" : {
+      "enabled" : "bool"
+    },
     "smart_monitor" : {
       "enabled" : "bool",
       "timeout" : "str"
@@ -96,5 +101,5 @@
     }
   },
   "ports" : {},
-  "image" : "sabuto/{arch}-hassio-telegraf"
+  "image" : "sabuto/{arch}-hassio-telegraf-dev"
 }
