@@ -1,0 +1,31 @@
+{
+  "name": "Etesync",
+  "version": "0.1.0",
+  "slug": "hassio_etesync",
+  "description" : "An addon to add etesync to hassio.",
+  "url" : "https://github.com/Sabuto/hassio-etesync",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "auth_api": true,
+  "docker_api": true,
+  "host_network": true,
+  "host_pid": true,
+  "apparmor": false,
+  "full_access" : true,
+  "map": [
+    "config:rw",
+    "share:rw",
+    "ssl"
+  ],
+  "options": {
+    "https": true
+  },
+  "schema": {
+    "https": "bool"
+  },
+  "ports" : {},
+  "image" : "sabuto/{arch}-hassio-etesync"
+}
