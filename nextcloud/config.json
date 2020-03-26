@@ -18,6 +18,8 @@
   "full_access" : true,
   "options": {},
   "schema": {},
-  "ports" : {},
+  "ports" : {
+    "443/tcp": 6245
+  },
   "image" : "sabuto/{arch}-hassio-nextcloud"
 }
