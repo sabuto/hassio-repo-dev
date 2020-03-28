@@ -20,7 +20,7 @@
   "options": {},
   "schema": {},
   "ports" : {
-    "443/tcp": 6245
+    "6245/tcp": 6245
   },
   "image" : "sabuto/{arch}-hassio-nextcloud"
 }
