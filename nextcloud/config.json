@@ -7,6 +7,7 @@
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
   "webui": "http://[HOST]:[PORT:6245]",
+  "ingress": true,
   "boot": "auto",
   "hassio_api": true,
   "hassio_role": "default",
