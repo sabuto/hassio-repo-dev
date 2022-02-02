@@ -1,0 +1,7 @@
+---
+channel: stable
+addons:
+  plex:
+    repository: sabuto/hassio-telegraf-dev
+    target: telegraf
+    image: ghcr.io/sabuto/hassio-telegraf-dev/{arch}
